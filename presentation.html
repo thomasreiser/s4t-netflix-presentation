@@ -28,7 +28,7 @@
 				<section>
 					<h1><img src="assets/netflix-logo.jpg" style="border:none;box-shadow:none;padding:0;margin:0;vertical-align:middle;position:relative;top:-0.07em" height="100em"><span style="margin:0 20px">Stack</span></h1>
 					<h3>Part 2</h3>
-					<h4><em>Was Netflix sonst noch bietet</em></h4>
+					<h4><em>Oder: Was Netflix sonst noch bietet</em></h4>
 					<br>
 					<br>
 					<p>
@@ -42,7 +42,6 @@
 						<li class="fragment">Über&nbsp;Netflix</li>
 						<li class="fragment">Ribbon</li>
 						<li class="fragment">Feign</li>
-						<li class="fragment">Zuul</li>
 						<li class="fragment">Hystrix</li>
 						<li class="fragment">Turbine</li>
 					</ol>
@@ -98,7 +97,7 @@
 				</section>
 
 				<section>
-					<h3>Beispiel</h3>
+					<h3>Ribbon Beispiel</h3>
 					<p>Java Config:</p>
 					<pre><code class="java hljs" data-trim contenteditable>
 						public class RibbonConfiguration {
@@ -119,7 +118,7 @@
 				</section>
 
 				<section>
-					<h3>Beispiel</h3>
+					<h3>Ribbon Beispiel</h3>
 					<p>YAML Config:</p>
 					<pre><code class="yaml hljs" data-trim contenteditable>
 						spring:
@@ -139,7 +138,7 @@
 				</section>
 
 				<section>
-					<h3>Beispiel</h3>
+					<h3>Ribbon Beispiel</h3>
 					<p>Anwendung:</p>
 					<pre><code class="java hljs" data-trim contenteditable>
 						@RestController
@@ -177,7 +176,8 @@
 				</section>
 
 				<section>
-					<h3>Beispiel</h3>
+					<h3>Feign Beispiel</h3>
+					<p>Snippet</p>
 					<pre><code class="java hljs" data-trim contenteditable>
 						interface GitHub {
 						  @RequestLine("GET /repos/{owner}/{repo}/contributors")
@@ -201,9 +201,24 @@
 						}
 					</code></pre>
 
-					<a href="https://api.github.com/repos/thomasreiser/onetz-epaper-downloader/contributors" target="_blank">Beispiel-Link</a>
+					<a href="https://api.github.com/repos/twbs/bootstrap/contributors" target="_blank">Beispiel-Link</a>
 				</section>
 
+				<section>
+					<h3>Feign Beispiel</h3>
+					<p>Spring Boot Projekt</p>
+
+					<button onclick="alert('todo')">Drück mich</button>
+				</section>
+
+				<section>
+					<h2 class="s4t">4. Hystrix</h2>
+					<ul>
+						<li class="fragment">Circuit Breaker (=Sicherung)</li>
+						<li class="fragment">todo</li>
+					</ul>
+					<img src="assets/hystrix.png" style="border:none;box-shadow:none;padding:0;margin:0m">
+				</section>
 			</div>
 		</div>
 
@@ -211,10 +226,10 @@
 		<script src="js/reveal.js"></script>
 
 		<script>
-
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				controls: true,
+				slideNumber: true,
 				progress: true,
 				history: true,
 				center: true,
